@@ -13,7 +13,7 @@ const Error = () => {
                 Well... you found an unexpected error...
             </p>
             <Link href="/" className="underline tracking-tighter" title="Go back to the main page">
-                Go to ' / '
+                Take me to &apos; / &apos;
             </Link>
         </div>
     )

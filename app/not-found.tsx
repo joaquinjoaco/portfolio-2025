@@ -11,7 +11,7 @@ const NotFound = () => {
                 Could not find what you were looking for...
             </p>
             <Link href="/" className="underline tracking-tighter" title="Go back to the main page">
-                Go back to ' / '
+                Take me to &apos; / &apos;
             </Link>
         </div>
     )
