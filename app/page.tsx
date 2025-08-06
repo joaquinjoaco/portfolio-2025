@@ -52,7 +52,7 @@ export default function Home() {
           <div key={idx} className="flex flex-col mx-8">
             <div className="flex flex-row justify-between gap-x-4">
               <Link
-                className="w-[80%] group flex flex-row justify-between items-center text-[0.70rem] sm:text-xs font-semibold tracking-tighter"
+                className="w-[80%] group flex flex-row justify-between items-center text-[0.70rem] sm:text-xs tracking-tight"
                 href={project.repository_url}
                 target="_blank"
                 title={"GitHub repository"}
@@ -65,7 +65,7 @@ export default function Home() {
                 <span className="group-hover:text-gray-500">{project.title.toUpperCase()}</span>
               </Link>
 
-              <div className="w-[80%] flex flex-row justify-end sm:justify-between items-center text-[0.70rem] sm:text-xs font-semibold tracking-tight">
+              <div className="w-[80%] flex flex-row justify-end sm:justify-between items-center text-[0.70rem] sm:text-xs tracking-tight">
                 {project.demo_url !== "local" ?
                   <Link
                     href={project.demo_url}
