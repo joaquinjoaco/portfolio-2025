@@ -10,7 +10,7 @@ const Error = () => {
                 {faces[Math.floor(Math.random() * faces.length)]}
             </p>
             <p className="font-bold mb-2">
-                Ups! Unexpected error...
+                Well... you found an unexpected error...
             </p>
             <Link href="/" className="underline tracking-tighter" title="Go back to the main page">
                 Go to ' / '

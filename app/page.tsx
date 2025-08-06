@@ -1,4 +1,5 @@
 import { projects } from '@/projects';
+import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -30,33 +31,45 @@ export default function Home() {
         </div>
         <div className="w-[80%]"></div>
       </div>
-
-      {projects.map((project, idx) => (
-        <div key={idx} className="flex flex-col mx-8">
-          <div className="flex flex-row justify-between gap-x-4">
-            <Link
-              className="w-[60%] group flex flex-row justify-between items-center text-xs font-semibold tracking-tighter"
-              href={project.repository_url}
-              target="_blank"
-              title={"GitHub repository"}
-            >
-              <span className="group-hover:text-gray-500">{project.year}</span>
-              <span className="group-hover:text-gray-500">{project.title.toUpperCase()}</span>
-            </Link>
-
-            <div className="w-[80%] flex flex-row justify-start items-center text-xs font-semibold tracking-tighter">
+      <div className="space-y-[6px]">
+        {projects.map((project, idx) => (
+          <div key={idx} className="flex flex-col mx-8">
+            <div className="flex flex-row justify-between gap-x-4">
               <Link
-                href={project.demo_url}
+                className="w-[60%] group flex flex-row justify-between items-center text-xs font-semibold tracking-tighter"
+                href={project.repository_url}
                 target="_blank"
-                className="hover:text-gray-500"
+                title={"GitHub repository"}
               >
-                {project.demo_url}
+                <span className="group-hover:text-gray-500">{project.year}</span>
+                <span className="hidden xl:flex items-center gap-x-2 opacity-0 group-hover:opacity-100 text-gray-500">
+                  <ExternalLink className="size-3" />
+                  Github Repository
+                </span>
+                <span className="group-hover:text-gray-500">{project.title.toUpperCase()}</span>
               </Link>
-            </div>
-          </div>
 
-        </div>
-      ))}
+              <div className="w-[80%] flex flex-row justify-start items-center text-xs font-semibold tracking-tight">
+                {project.demo_url !== "local" ?
+                  <Link
+                    href={project.demo_url}
+                    target="_blank"
+                    className="hover:text-gray-500 text-ellipsis whitespace-nowrap overflow-hidden max-w-sm"
+                    title={project.data_title}
+                  >
+                    {project.demo_url}
+                  </Link>
+                  :
+                  <span className="cursor-not-allowed text-gray-500 text-ellipsis whitespace-nowrap overflow-hidden max-w-sm" >
+                    Intended to be run locally
+                  </span>
+                }
+              </div>
+            </div>
+
+          </div>
+        ))}
+      </div>
 
     </div>
   );
