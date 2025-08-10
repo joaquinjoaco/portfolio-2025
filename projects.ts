@@ -7,7 +7,7 @@ export const projects: {
     year: string;
 }[] = [
         {
-            title: "Identi",
+            title: "Identi (WIP)",
             data_title: "A landing page Inspired by fin.ai",
             demo_url: "https://in-it-to-win-it.vercel.app/",
             repository_url: "https://github.com/joaquinjoaco/in-it-to-win-it",
@@ -17,15 +17,15 @@ export const projects: {
         {
             title: "Ave Fenix inventory",
             data_title: "Quite a simple inventory system. Intended to be run locally",
-            demo_url: "local",
+            demo_url: "https://stock-inventario-demo.vercel.app/",
             repository_url: "https://github.com/joaquinjoaco/stock-inventario",
             made_with: [],
             year: "2024"
         },
         {
-            title: "Posadas Park Library",
+            title: "Parque Posadas Library",
             data_title: "Quite a simple book lending system. Intended to be run locally",
-            demo_url: "local",
+            demo_url: "https://biblio-demo.vercel.app/",
             repository_url: "https://github.com/joaquinjoaco/Biblio-posadas",
             made_with: [],
             year: "2024"
@@ -33,7 +33,7 @@ export const projects: {
         {
             title: "SportPolis Workshop",
             data_title: "A system to manage a bike workshop. Intended to be run locally",
-            demo_url: "local",
+            demo_url: "https://bicycle-workshop-demo.vercel.app/",
             repository_url: "https://github.com/joaquinjoaco/sportpolis-workshop",
             made_with: [],
             year: "2024"
