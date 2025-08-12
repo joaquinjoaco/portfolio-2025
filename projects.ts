@@ -23,7 +23,7 @@ export const projects: {
             year: "2024"
         },
         {
-            title: "Parque Posadas Library",
+            title: "Posadas Library",
             data_title: "Quite a simple book lending system. Intended to be run locally",
             demo_url: "https://biblio-demo.vercel.app/",
             repository_url: "https://github.com/joaquinjoaco/Biblio-posadas",
